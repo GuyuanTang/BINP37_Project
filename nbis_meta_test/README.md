@@ -19,8 +19,8 @@ conda activate nbis-meta
 ## Steps
 - `qc` to run the pre-processing and to generate the quality report on the samples.
 - `assemble` to run the metagenomic assembly (megahit) on the preprocessed samples. `metaquast` to compare the assembly results.
-- `annotate` to annotate open reading frames called on assembled contigs using settings defined in the config file. It also quantifies genes and features, producing normalized and raw counts.
-
+- `annotate` to annotate open reading frames called on assembled contigs using settings defined in the config file. It also quantifies genes and features, producing normalized and raw counts. When specified `True` in taxonomy, this step would include the taxonomy analysis.
+- run statistical analysis on the outputs from `annotate` (including quantification and taxonomy reports).
 
 
 ### 1. QC 
@@ -65,10 +65,21 @@ cd nbis-meta
 snakemake --use-conda --configfile ./config/config.yaml --cores 60 annotate
 ```
 However, during the process, when producing the output file `modules.parsed.counts.tsv`, there were duplicated row names ("Phthalate degration, phthatlate => protocatechuate [Path:map00624 map01220 map01100 map01120]") which caused errors because the R script `edger.R` within the snakemake did not accept the duplicated row names.  
-And thus, we mannually add "1" and "2" at the ends of these two row names to avoid the error messages. As the result, in `modules.parsed.counts.tsv`, row name for 255 would be "Phthalate degration, phthatlate => protocatechuate [Path:map00624 map01220 map01100 map01120]1". And row name for 256 would be "Phthalate degration, phthatlate => protocatechuate [Path:map00624 map01220 map01100 map01120]2".  
-Then we continue the nbis-meta snakemake again when manually correting the duplicated row names.
+  
+And thus, we mannually added "1" and "2" at the ends of these two row names to avoid the error messages. As the result, in `modules.parsed.counts.tsv`, row name for 255 would be "Phthalate degration, phthatlate => protocatechuate [Path:map00624 map01220 map01100 map01120]1". And row name for 256 would be "Phthalate degration, phthatlate => protocatechuate [Path:map00624 map01220 map01100 map01120]2".  
+  
+Then we continued the nbis-meta snakemake again after manually correting the duplicated row names.
 ```shell
 snakemake --unlock
 snakemake --rerun-incomplete --use-conda --configfile ./config/config.yaml --cores 60 annotate
 ```
+Since we specified `True` in taxonomy analysis under the command `annotate`, the command would also run the taxonomy step automatically. To ensure the snakemake workflow could run successfully, we chose to download the UniRef100 database manually under the target directory.
+```shell
+wget https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref100/uniref100.fasta.gz /resources/uniref100/
+```
+
+
+### 4. Statistical Analysis
+
+
 
