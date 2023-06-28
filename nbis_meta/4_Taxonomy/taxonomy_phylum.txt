@@ -1,0 +1,229 @@
+133	Archaea	Candidatus Aenigmarchaeota
+128	Archaea	Candidatus Altiarchaeota
+11849	Archaea	Candidatus Bathyarchaeota
+9	Archaea	Candidatus Brockarchaeota
+24	Archaea	Candidatus Diapherotrites
+27	Archaea	Candidatus Heimdallarchaeota
+18	Archaea	Candidatus Helarchaeota
+5	Archaea	Candidatus Hydrothermarchaeota
+40	Archaea	Candidatus Korarchaeota
+153	Archaea	Candidatus Lokiarchaeota
+142	Archaea	Candidatus Marsarchaeota
+214	Archaea	Candidatus Micrarchaeota
+4	Archaea	Candidatus Nanohaloarchaeota
+4	Archaea	Candidatus Parvarchaeota
+3503	Archaea	Candidatus Thermoplasmatota
+83	Archaea	Candidatus Thorarchaeota
+4	Archaea	Candidatus Undinarchaeota
+61	Archaea	Candidatus Verstraetearchaeota
+1088	Archaea	Candidatus Woesearchaeota
+25273	Archaea	Euryarchaeota
+89	Archaea	Nanoarchaeota
+3481	Archaea	Nitrososphaerota
+981	Archaea	Thermoproteota
+359	Bacteria	Abditibacteriota
+700723	Bacteria	Acidobacteriota
+248131	Bacteria	Actinomycetota
+45	Bacteria	Aquificota
+8490	Bacteria	Armatimonadota
+444	Bacteria	Atribacterota
+18885	Bacteria	Bacillota
+143970	Bacteria	Bacteroidota
+119	Bacteria	Balneolota
+590	Bacteria	Bdellovibrionota
+64	Bacteria	Caldisericota
+621	Bacteria	Calditrichota
+321	Bacteria	Campylobacterota
+2	Bacteria	Candidatus Abawacabacteria
+23	Bacteria	Candidatus Absconditabacteria
+93	Bacteria	Candidatus Abyssubacteria
+18	Bacteria	Candidatus Adlerbacteria
+141	Bacteria	Candidatus Aerophobetes
+50	Bacteria	Candidatus Amesbacteria
+1597	Bacteria	Candidatus Aminicenantes
+17	Bacteria	Candidatus Andersenbacteria
+4	Bacteria	Candidatus Auribacterota
+31	Bacteria	Candidatus Azambacteria
+28	Bacteria	Candidatus Beckwithbacteria
+1058	Bacteria	Candidatus Berkelbacteria
+787	Bacteria	Candidatus Binatota
+198	Bacteria	Candidatus Bipolaricaulota
+4	Bacteria	Candidatus Blackallbacteria
+29	Bacteria	Candidatus Blackburnbacteria
+3	Bacteria	Candidatus Brennerbacteria
+31	Bacteria	Candidatus Buchananbacteria
+23	Bacteria	Candidatus Campbellbacteria
+10	Bacteria	Candidatus Cerribacteria
+14	Bacteria	Candidatus Chisholmbacteria
+136	Bacteria	Candidatus Cloacimonadota
+8	Bacteria	Candidatus Coatesbacteria
+31	Bacteria	Candidatus Collierbacteria
+22	Bacteria	Candidatus Colwellbacteria
+4960	Bacteria	Candidatus Cryosericota
+59	Bacteria	Candidatus Curtissbacteria
+129	Bacteria	Candidatus Dadabacteria
+140	Bacteria	Candidatus Daviesbacteria
+10	Bacteria	Candidatus Delongbacteria
+70	Bacteria	Candidatus Desantisbacteria
+3712	Bacteria	Candidatus Dormibacteraeota
+913	Bacteria	Candidatus Doudnabacteria
+61	Bacteria	Candidatus Edwardsbacteria
+385	Bacteria	Candidatus Eisenbacteria
+21918	Bacteria	Candidatus Eremiobacterota
+462	Bacteria	Candidatus Falkowbacteria
+23	Bacteria	Candidatus Fermentibacteria
+8	Bacteria	Candidatus Fervidibacteria
+1629	Bacteria	Candidatus Firestonebacteria
+15	Bacteria	Candidatus Fischerbacteria
+24	Bacteria	Candidatus Fraserbacteria
+46	Bacteria	Candidatus Giovannonibacteria
+152	Bacteria	Candidatus Glassbacteria
+794	Bacteria	Candidatus Goldbacteria
+300	Bacteria	Candidatus Gottesmanbacteria
+17	Bacteria	Candidatus Gracilibacteria
+14	Bacteria	Candidatus Gribaldobacteria
+178	Bacteria	Candidatus Handelsmanbacteria
+25	Bacteria	Candidatus Harrisonbacteria
+6	Bacteria	Candidatus Hinthialibacterota
+2195	Bacteria	Candidatus Hydrogenedentes
+12	Bacteria	Candidatus Hydrothermae
+5	Bacteria	Candidatus Jacksonbacteria
+46	Bacteria	Candidatus Jorgensenbacteria
+374	Bacteria	Candidatus Kaiserbacteria
+24	Bacteria	Candidatus Kapabacteria
+31	Bacteria	Candidatus Kerfeldbacteria
+44	Bacteria	Candidatus Komeilibacteria
+101	Bacteria	Candidatus Kryptonia
+22	Bacteria	Candidatus Kuenenbacteria
+1232	Bacteria	Candidatus Latescibacteria
+3074	Bacteria	Candidatus Levybacteria
+32	Bacteria	Candidatus Lindowbacteria
+73	Bacteria	Candidatus Liptonbacteria
+15	Bacteria	Candidatus Lithacetigenota
+48	Bacteria	Candidatus Lloydbacteria
+108	Bacteria	Candidatus Magasanikbacteria
+78	Bacteria	Candidatus Margulisbacteria
+190	Bacteria	Candidatus Marinimicrobia
+1423	Bacteria	Candidatus Melainabacteria
+51	Bacteria	Candidatus Microgenomates
+1421	Bacteria	Candidatus Moranbacteria
+147	Bacteria	Candidatus Nealsonbacteria
+11	Bacteria	Candidatus Niyogibacteria
+351	Bacteria	Candidatus Nomurabacteria
+4952	Bacteria	Candidatus Omnitrophota
+60	Bacteria	Candidatus Pacebacteria
+361	Bacteria	Candidatus Parcubacteria
+140	Bacteria	Candidatus Peregrinibacteria
+638	Bacteria	Candidatus Poribacteria
+41	Bacteria	Candidatus Portnoybacteria
+41	Bacteria	Candidatus Ratteibacteria
+286	Bacteria	Candidatus Raymondbacteria
+115	Bacteria	Candidatus Riflebacteria
+305	Bacteria	Candidatus Roizmanbacteria
+1973	Bacteria	Candidatus Rokubacteria
+22	Bacteria	Candidatus Ryanbacteria
+4992	Bacteria	Candidatus Saccharibacteria
+116	Bacteria	Candidatus Schekmanbacteria
+483	Bacteria	Candidatus Shapirobacteria
+1033	Bacteria	Candidatus Staskawiczbacteria
+1305	Bacteria	Candidatus Sumerlaeota
+61	Bacteria	Candidatus Sungbacteria
+4	Bacteria	Candidatus Tagabacteria
+1190	Bacteria	Candidatus Taylorbacteria
+282	Bacteria	Candidatus Tectomicrobia
+13	Bacteria	Candidatus Terrybacteria
+128	Bacteria	Candidatus Uhrbacteria
+44	Bacteria	Candidatus Vogelbacteria
+42	Bacteria	Candidatus Wallbacteria
+29	Bacteria	Candidatus Wildermuthbacteria
+4	Bacteria	Candidatus Wirthbacteria
+813	Bacteria	Candidatus Woesebacteria
+121	Bacteria	Candidatus Wolfebacteria
+48	Bacteria	Candidatus Woykebacteria
+122	Bacteria	Candidatus Yanofskybacteria
+46	Bacteria	Candidatus Yonathbacteria
+258	Bacteria	Candidatus Zambryskibacteria
+296	Bacteria	Chlamydiota
+607	Bacteria	Chlorobiota
+93743	Bacteria	Chloroflexota
+148	Bacteria	Chrysiogenota
+224	Bacteria	Coprothermobacterota
+6030	Bacteria	Cyanobacteriota
+29	Bacteria	Deferribacterota
+515	Bacteria	Deinococcota
+19	Bacteria	Dictyoglomota
+2361	Bacteria	Elusimicrobiota
+8157	Bacteria	Fibrobacterota
+19	Bacteria	Fusobacteriota
+10130	Bacteria	Gemmatimonadota
+19996	Bacteria	Ignavibacteriota
+538	Bacteria	Kiritimatiellota
+4913	Bacteria	Lentisphaerota
+92	Bacteria	Mycoplasmatota
+23562	Bacteria	Myxococcota
+359	Bacteria	Nitrospinota
+7640	Bacteria	Nitrospirota
+84257	Bacteria	Planctomycetota
+343990	Bacteria	Pseudomonadota
+150	Bacteria	Rhodothermota
+5789	Bacteria	Spirochaetota
+142	Bacteria	Synergistota
+31034	Bacteria	Thermodesulfobacteriota
+417	Bacteria	Thermomicrobiota
+140	Bacteria	Thermotogota
+165284	Bacteria	Verrucomicrobiota
+14	Bacteria	candidate division CPR1
+12	Bacteria	candidate division CPR2
+31	Bacteria	candidate division CPR3
+14	Bacteria	candidate division KD3-62
+16	Bacteria	candidate division LCP-89
+2390	Bacteria	candidate division NC10
+1839	Bacteria	candidate division WOR-3
+132	Bacteria	candidate division WWE3
+463	Bacteria	candidate division Zixibacteria
+9	Eukaryota	Apicomplexa
+335	Eukaryota	Arthropoda
+41823	Eukaryota	Ascomycota
+7	Eukaryota	Bacillariophyta
+3678	Eukaryota	Basidiomycota
+4	Eukaryota	Blastocladiomycota
+44	Eukaryota	Chlorophyta
+55	Eukaryota	Chordata
+33	Eukaryota	Chytridiomycota
+88	Eukaryota	Ciliophora
+22	Eukaryota	Cnidaria
+5	Eukaryota	Discosea
+3	Eukaryota	Echinodermata
+2	Eukaryota	Endomyxa
+4	Eukaryota	Euglenozoa
+16	Eukaryota	Evosea
+7	Eukaryota	Fornicata
+3	Eukaryota	Haptophyta
+3	Eukaryota	Heterolobosea
+3	Eukaryota	Microsporidia
+11	Eukaryota	Mollusca
+220	Eukaryota	Mucoromycota
+52	Eukaryota	Nematoda
+2	Eukaryota	Olpidiomycota
+30	Eukaryota	Oomycota
+6	Eukaryota	Platyhelminthes
+2	Eukaryota	Priapulida
+8	Eukaryota	Rhodophyta
+1377	Eukaryota	Rotifera
+1321	Eukaryota	Streptophyta
+3	Eukaryota	Tardigrada
+6	Eukaryota	Tubulinea
+36	Eukaryota	Zoopagomycota
+2	Viruses	Artverviricota
+6	Viruses	Cressdnaviricota
+76	Viruses	Nucleocytoviricota
+2	Viruses	Phixviricota
+13	Viruses	Preplasmiviricota
+974	Viruses	Uroviricota
+3	d__Archaea	p__Halobacteriota
+183	d__Bacteria	p__Acidobacteriota
+36	d__Bacteria	p__Actinobacteriota
+34	d__Bacteria	p__Bacteroidota
+11	d__Bacteria	p__Dormibacterota
+49	d__Bacteria	p__Planctomycetota
+23	d__Bacteria	p__Verrucomicrobiota

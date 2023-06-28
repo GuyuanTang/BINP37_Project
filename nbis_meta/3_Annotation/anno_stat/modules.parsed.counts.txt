@@ -1,0 +1,376 @@
+# number of annotations: 339
+# number of IDs: 27
+# %sparse: 5.94
+
+# the sum and mean counts per row
+                                                          sum       mean
+Module_name                                                             
+Unclassified                                        235533197 8723451.74
+Reductive citrate cycle (Arnon-Buchanan cycle) ...    1488542   55131.19
+Citrate cycle (TCA cycle, Krebs cycle) [PATH:ma...    1261171   46710.04
+NADH:quinone oxidoreductase, prokaryotes [PATH:...    1160282   42973.41
+Citrate cycle, second carbon oxidation, 2-oxogl...     947889   35107.00
+Glycolysis (Embden-Meyerhof pathway), glucose =...     940382   34828.96
+Pentose phosphate pathway (Pentose phosphate cy...     876245   32453.52
+Dicarboxylate-hydroxybutyrate cycle [PATH:map00...     859574   31836.07
+Heme biosynthesis, plants and bacteria, glutama...     725434   26867.93
+De novo purine biosynthesis, PRPP + glutamine =...     700971   25961.89
+Methionine biosynthesis, aspartate => homoserin...     675804   25029.78
+Gluconeogenesis, oxaloacetate => fructose-6P [P...     654785   24251.30
+Pyruvate oxidation, pyruvate => acetyl-CoA [PAT...     624994   23147.93
+Methanogenesis, acetate => methane [PATH:map006...     621264   23009.78
+Lysine biosynthesis, succinyl-DAP pathway, aspa...     604855   22402.04
+Isoleucine biosynthesis, threonine => 2-oxobuta...     604347   22383.22
+De novo pyrimidine biosynthesis, glutamine (+ P...     598729   22175.15
+Reductive pentose phosphate cycle (Calvin cycle...     576867   21365.44
+Fatty acid biosynthesis, elongation [PATH:map00...     558307   20678.04
+Leucine degradation, leucine => acetoacetate + ...     553550   20501.85
+3-Hydroxypropionate bi-cycle [PATH:map00720 map...     550839   20401.44
+Incomplete reductive citrate cycle, acetyl-CoA ...     544363   20161.59
+Valine/isoleucine biosynthesis, pyruvate => val...     519614   19244.96
+Pentose phosphate pathway, non-oxidative phase,...     494486   18314.30
+Lysine biosynthesis, DAP aminotransferase pathw...     487444   18053.48
+Glycolysis, core module involving three-carbon ...     486986   18036.52
+Photorespiration [PATH:map00630 map01200 map011...     466504   17277.93
+Pimeloyl-ACP biosynthesis, BioC-BioH pathway, m...     462774   17139.78
+Threonine biosynthesis, aspartate => homoserine...     435488   16129.19
+Ascorbate biosynthesis, plants, fructose-6P => ...     431608   15985.48
+Lysine biosynthesis, acetyl-DAP pathway, aspart...     425246   15749.85
+Methylaspartate cycle [PATH:map00020 map00250 m...     415971   15406.33
+Histidine biosynthesis, PRPP => histidine [PATH...     410999   15222.19
+Lysine biosynthesis, DAP dehydrogenase pathway,...     409958   15183.63
+F-type ATPase, prokaryotes and chloroplasts [PA...     409148   15153.63
+Galactose degradation, Leloir pathway, galactos...     408875   15143.52
+Shikimate pathway, phosphoenolpyruvate + erythr...     408696   15136.89
+Reductive pentose phosphate cycle, glyceraldehy...     406334   15049.41
+Deoxyribonucleotide biosynthesis, ADP/GDP/CDP/U...     397006   14703.93
+C5 isoprenoid biosynthesis, non-mevalonate path...     396193   14673.81
+Leucine biosynthesis, 2-oxoisovalerate => 2-oxo...     394704   14618.67
+Trehalose biosynthesis, D-glucose 1P => trehalo...     390402   14459.33
+Formaldehyde assimilation, serine pathway [PATH...     387515   14352.41
+Glucuronate pathway (uronate pathway) [PATH:map...     383458   14202.15
+Ethylmalonyl pathway [PATH:map00630 map01200 ma...     368924   13663.85
+Tryptophan biosynthesis, chorismate => tryptoph...     365748   13546.22
+Glyoxylate cycle [PATH:map00630 map01200 map011...     363661   13468.93
+beta-Oxidation, acyl-CoA synthesis [PATH:map000...     357476   13239.85
+Methanogenesis, CO2 => methane [PATH:map00680 m...     355649   13172.19
+Reductive acetyl-CoA pathway (Wood-Ljungdahl pa...     337906   12515.04
+KDO2-lipid A biosynthesis, Raetz pathway, LpxL-...     332468   12313.63
+Arginine biosynthesis, glutamate => acetylcitru...     329364   12198.67
+Guanine ribonucleotide biosynthesis, IMP => GDP...     325849   12068.48
+beta-Oxidation [PATH:map00071 map01212 map01100]       324035   12001.30
+Methionine salvage pathway [PATH:map00270 map01...     320573   11873.07
+Fatty acid biosynthesis, initiation [PATH:map00...     319280   11825.19
+Adenine ribonucleotide biosynthesis, IMP => ADP...     317898   11774.00
+Citrate cycle, first carbon oxidation, oxaloace...     313282   11603.04
+dTDP-L-rhamnose biosynthesis [PATH:map00521 map...     310799   11511.07
+Pentose phosphate pathway, oxidative phase, glu...     302511   11204.11
+Ornithine biosynthesis, glutamate => ornithine ...     293895   10885.00
+Hydroxypropionate-hydroxybutylate cycle [PATH:m...     293377   10865.81
+C4-dicarboxylic acid cycle, NADP - malic enzyme...     282718   10471.04
+NAD biosynthesis, aspartate => quinolinate => N...     280053   10372.33
+Ascorbate biosynthesis, animals, glucose-1P => ...     279847   10364.70
+Nucleotide sugar biosynthesis, glucose => UDP-g...     279482   10351.19
+Methanogenesis, methylamine/dimethylamine/trime...     279398   10348.07
+Lysine degradation, lysine => saccharopine => a...     277969   10295.15
+Tetrahydrofolate biosynthesis, GTP => THF [PATH...     275616   10208.00
+Cytochrome c oxidase, prokaryotes [PATH:map00190]      256699    9507.37
+Methanogenesis, methanol => methane [PATH:map00...     255667    9469.15
+Isoleucine biosynthesis, pyruvate => 2-oxobutan...     253936    9405.04
+Entner-Doudoroff pathway, glucose-6P => glycera...     252660    9357.78
+Riboflavin biosynthesis, plants and bacteria, G...     252023    9334.19
+Propanoyl-CoA metabolism, propanoyl-CoA => succ...     248796    9214.67
+Pantothenate biosynthesis, valine/L-aspartate =...     248121    9189.67
+Methionine degradation [PATH:map00270 map01100]        246179    9117.74
+Ubiquinone biosynthesis, prokaryotes, chorismat...     243004    9000.15
+Purine degradation, xanthine => urea [PATH:map0...     231353    8568.63
+Semi-phosphorylative Entner-Doudoroff pathway, ...     228360    8457.78
+D-Glucuronate degradation, D-glucuronate => pyr...     227921    8441.52
+CAM (Crassulacean acid metabolism), light [PATH...     222315    8233.89
+C4-dicarboxylic acid cycle, NAD - malic enzyme ...     220996    8185.04
+Polyamine biosynthesis, arginine => agmatine =>...     219033    8112.33
+Urea cycle [PATH:map00220 map01230 map01100]           216124    8004.59
+Triacylglycerol biosynthesis [PATH:map00561 map...     214429    7941.81
+Ketone body biosynthesis, acetyl-CoA => acetoac...     209277    7751.00
+Assimilatory sulfate reduction, sulfate => H2S ...     208673    7728.63
+C5 isoprenoid biosynthesis, mevalonate pathway ...     207444    7683.11
+Multidrug resistance, efflux pump MexAB-OprM           207017    7667.30
+GABA (gamma-Aminobutyrate) shunt [PATH:map00250...     202056    7483.56
+Arginine biosynthesis, ornithine => arginine [P...     194979    7221.44
+Serine biosynthesis, glycerate-3P => serine [PA...     192152    7116.74
+D-Galacturonate degradation (bacteria), D-galac...     191430    7090.00
+Thiamine biosynthesis, prokaryotes, AIR (+ DXP/...     180393    6681.22
+Tetrahydrofolate biosynthesis, mediated by PTPS...     179621    6652.63
+Menaquinone biosynthesis, chorismate (+ polypre...     179325    6641.67
+Malonate semialdehyde pathway, propanoyl-CoA =>...     178559    6613.30
+Coenzyme A biosynthesis, pantothenate => CoA [P...     177525    6575.00
+C1-unit interconversion, prokaryotes [PATH:map0...     177148    6561.04
+Pyrimidine ribonucleotide biosynthesis, UMP => ...     171373    6347.15
+Reductive pentose phosphate cycle, ribulose-5P ...     170533    6316.04
+D-galactonate degradation, De Ley-Doudoroff pat...     170309    6307.74
+Ectoine biosynthesis, aspartate => ectoine [PAT...     169953    6294.56
+Succinate dehydrogenase, prokaryotes [PATH:map0...     167638    6208.81
+Cysteine biosynthesis, serine => cysteine [PATH...     163992    6073.78
+Histidine degradation, histidine => N-formimino...     163230    6045.56
+GABA biosynthesis, eukaryotes, putrescine => GA...     159561    5909.67
+Cytochrome bd ubiquinol oxidase [PATH:map00190]        143627    5319.52
+Phosphate acetyltransferase-acetate kinase path...     143052    5298.22
+Cytochrome bc1 complex respiratory unit [PATH:m...     139690    5173.70
+Betaine biosynthesis, choline => betaine [PATH:...     124698    4618.44
+Cobalamin biosynthesis, cobyrinate a,c-diamide ...     121596    4503.56
+C4-dicarboxylic acid cycle, phosphoenolpyruvate...     119167    4413.59
+CMP-KDO biosynthesis [PATH:map00540 map01250 ma...     118107    4374.33
+Phosphatidylethanolamine (PE) biosynthesis, PA ...     117543    4353.44
+Dissimilatory sulfate reduction, sulfate => H2S...     115659    4283.67
+Proline biosynthesis, glutamate/ornithine => pr...     113792    4214.52
+Pyrimidine degradation, uracil => beta-alanine,...     113743    4212.70
+ADP-L-glycero-D-manno-heptose biosynthesis [PAT...     113337    4197.67
+Denitrification, nitrate => nitrogen [PATH:map0...     112659    4172.56
+CAM (Crassulacean acid metabolism), dark [PATH:...     112607    4170.63
+Cysteine biosynthesis, methionine => cysteine [...     112480    4165.93
+Formaldehyde assimilation, ribulose monophospha...     109508    4055.85
+Nucleotide sugar biosynthesis, galactose => UDP...     108557    4020.63
+Dissimilatory nitrate reduction, nitrate => amm...     104604    3874.22
+Biotin biosynthesis, BioW pathway, pimelate => ...     101679    3765.89
+Biotin biosynthesis, BioI pathway, long-chain-a...     101356    3753.93
+V/A-type ATPase, prokaryotes [PATH:map00190]           101066    3743.19
+Biotin biosynthesis, pimeloyl-ACP/CoA => biotin...     101023    3741.59
+Keratan sulfate degradation [PATH:map00531 map0...     100613    3726.41
+Pectin degradation [PATH:map00040 map01100]            100448    3720.30
+Pertussis pathogenicity signature, T1SS [PATH:m...     100105    3707.59
+Tyrosine biosynthesis, chorismate => HPP => tyr...      97430    3608.52
+Tryptophan metabolism, tryptophan => kynurenine...      96597    3577.67
+Cytochrome c oxidase [PATH:map00190]                    94613    3504.19
+F420 biosynthesis, archaea [PATH:map00680 map01...      93584    3466.07
+Cytochrome bc1 complex [PATH:map00190]                  91868    3402.52
+Non-phosphorylative Entner-Doudoroff pathway, g...      91487    3388.41
+Tetrahydrofolate biosynthesis, mediated by ribA...      91304    3381.63
+Multidrug resistance, efflux pump MdtEF-TolC            91034    3371.63
+Multidrug resistance, efflux pump AcrEF-TolC            90854    3364.96
+Pyridoxal-P biosynthesis, erythrose-4P => pyrid...      89830    3327.04
+C1-unit interconversion, eukaryotes [PATH:map00...      88838    3290.30
+Phenylalanine biosynthesis, chorismate => pheny...      82033    3038.26
+Chondroitin sulfate degradation [PATH:map00531 ...      80067    2965.44
+Dermatan sulfate degradation [PATH:map00531 map...      79843    2957.15
+C10-C20 isoprenoid biosynthesis, bacteria [PATH...      77668    2876.59
+Catechol meta-cleavage, catechol => acetyl-CoA ...      76059    2817.00
+beta-Lactam resistance, Bla system [PATH:map01501]      74194    2747.93
+Ethylene biosynthesis, methionine => ethylene [...      74153    2746.41
+beta-Carotene biosynthesis, GGAP => beta-carote...      72954    2702.00
+Trans-cinnamate degradation, trans-cinnamate =>...      70511    2611.52
+Heparan sulfate degradation [PATH:map00531 map0...      68112    2522.67
+L-threo-Tetrahydrobiopterin biosynthesis, GTP =...      67479    2499.22
+Inositol phosphate metabolism, Ins(1,3,4,5)P4 =...      67212    2489.33
+Tetrahydrobiopterin biosynthesis, GTP => BH4 [P...      66707    2470.63
+Formaldehyde assimilation, xylulose monophospha...      65157    2413.22
+Cytochrome c oxidase, cbb3-type [PATH:map00190]         63994    2370.15
+PRPP biosynthesis, ribose 5P => PRPP [PATH:map0...      63388    2347.70
+Tyrosine degradation, tyrosine => homogentisate...      61316    2270.96
+Thiosulfate oxidation by SOX complex, thiosulfa...      59164    2191.26
+Lactosylceramide biosynthesis [PATH:map00600 ma...      55948    2072.15
+Catecholamine biosynthesis, tyrosine => dopamin...      55888    2069.93
+C10-C20 isoprenoid biosynthesis, plants [PATH:m...      54951    2035.22
+Vancomycin resistance, D-Ala-D-Lac type [PATH:m...      54255    2009.44
+Jasmonic acid biosynthesis [PATH:map00592 map01...      53979    1999.22
+Melatonin biosynthesis, animals, tryptophan => ...      49888    1847.70
+Lysine biosynthesis, AAA pathway, 2-oxoglutarat...      47599    1762.93
+Acetyl-CoA pathway, CO2 => acetyl-CoA [PATH:map...      47140    1745.93
+Ascorbate degradation, ascorbate => D-xylulose-...      44927    1663.96
+Cysteine biosynthesis, homocysteine + serine =>...      43991    1629.30
+Lysine biosynthesis, 2-oxoglutarate => 2-oxoadi...      42468    1572.89
+Multidrug resistance, efflux pump MexJK-OprM            42062    1557.85
+Cationic antimicrobial peptide (CAMP) resistanc...      41633    1541.96
+Pentose phosphate pathway, archaea, fructose 6P...      41290    1529.26
+Polyamine biosynthesis, arginine => ornithine =...      40544    1501.63
+Cytochrome b6f complex [PATH:map00195]                  39240    1453.33
+Nitrogen fixation, nitrogen => ammonia [PATH:ma...      38393    1421.96
+Benzoyl-CoA degradation, benzoyl-CoA => 3-hydro...      37580    1391.85
+Toluene degradation, toluene => benzoate [PATH:...      37265    1380.19
+C10-C20 isoprenoid biosynthesis, archaea [PATH:...      35135    1301.30
+Assimilatory nitrate reduction, nitrate => ammo...      35075    1299.07
+Multidrug resistance, efflux pump MexXY-OprM            35016    1296.89
+N-glycosylation by oligosaccharyltransferase [P...      34238    1268.07
+2-Oxocarboxylic acid chain extension, 2-oxoglut...      33347    1235.07
+Catechol ortho-cleavage, catechol => 3-oxoadipa...      33044    1223.85
+Lysine biosynthesis, mediated by LysW, 2-aminoa...      31915    1182.04
+Coenzyme M biosynthesis [PATH:map00680 map01240...      31760    1176.30
+Glutathione biosynthesis, glutamate => glutathi...      29546    1094.30
+Xylene degradation, xylene => methylbenzoate [P...      28968    1072.89
+Complete nitrification, comammox, ammonia => ni...      28837    1068.04
+Pyocyanine biosynthesis, chorismate => pyocyani...      28193    1044.19
+NADH:ubiquinone oxidoreductase, mitochondria [P...      27499    1018.48
+Sphingosine degradation [PATH:map00600 map01100]        26426     978.74
+Imipenem resistance, repression of porin OprD           26314     974.59
+9-membered enediyne core biosynthesis, malonyl-...      25614     948.67
+Ornithine biosynthesis, mediated by LysW, gluta...      25303     937.15
+Undecaprenylphosphate alpha-L-Ara4N biosynthesi...      24987     925.44
+Cytochrome o ubiquinol oxidase [PATH:map00190]          23155     857.59
+10-membered enediyne core biosynthesis, malonyl...      22564     835.70
+Fumarate reductase, prokaryotes [PATH:map00190]         21224     786.07
+Coenzyme F430 biosynthesis, sirohydrochlorin =>...      21154     783.48
+Validamycin A biosynthesis, sedoheptulopyranose...      20499     759.22
+Homoprotocatechuate degradation, homoprotocatec...      19866     735.78
+Benzoate degradation, cyclohexanecarboxylic aci...      19546     723.93
+Multidrug resistance, efflux pump MexEF-OprN            19391     718.19
+Pyrrolnitrin biosynthesis, tryptophan => pyrrol...      18363     680.11
+NAD(P)H:quinone oxidoreductase, chloroplasts an...      17967     665.44
+GABA biosynthesis, prokaryotes, putrescine => G...      17839     660.70
+EHEC/EPEC pathogenicity signature, T3SS and eff...      16554     613.11
+Nicotinate degradation, nicotinate => fumarate ...      15863     587.52
+C10-C20 isoprenoid biosynthesis, non-plant euka...      15132     560.44
+Nicotine degradation, pyridine pathway, nicotin...      14578     539.93
+Monolignol biosynthesis, phenylalanine/tyrosine...      13744     509.04
+Toluene degradation, anaerobic, toluene => benz...      11814     437.56
+Nitrate assimilation                                    11802     437.11
+Multidrug resistance, efflux pump MexPQ-OpmE            11362     420.81
+Bile acid biosynthesis, cholesterol => cholate/...      10918     404.37
+Acylglycerol degradation [PATH:map00561 map01100]       10688     395.85
+Phthalate degradation, phthalate => protocatech...      10440     386.67
+Acarbose biosynthesis, sedoheptulopyranose-7P =...      10052     372.30
+Nodulation                                               9626     356.52
+Anoxygenic photosystem I                                 9329     345.52
+Neocarzinostatin naphthoate moiety biosynthesis...       9276     343.56
+Cholesterol biosynthesis, squalene 2,3-epoxide ...       9191     340.41
+Multidrug resistance, efflux pump BpeEF-OprC             8886     329.11
+Tyrosine biosynthesis, chorismate => arogenate ...       8751     324.11
+Type II polyketide backbone biosynthesis, acyl-...       8467     313.59
+dTDP-D-forosamine biosynthesis [PATH:map00523 m...       8453     313.07
+Cephamycin C biosynthesis, aminoadipate + cycte...       8349     309.22
+Rebeccamycin biosynthesis, tryptophan => rebecc...       7875     291.67
+Ergocalciferol biosynthesis, squalene 2,3-epoxi...       7739     286.63
+Prodigiosin biosynthesis, L-proline => prodigio...       7689     284.78
+Chlortetracycline biosynthesis, pretetramide =>...       7234     267.93
+Cationic antimicrobial peptide (CAMP) resistanc...       7187     266.19
+Xanthomonas spp. pathogenicity signature, T3SS ...       7148     264.74
+Undecylprodigiosin biosynthesis, L-proline => u...       6689     247.74
+Phosphatidylcholine (PC) biosynthesis, PE => PC...       6593     244.19
+N-glycan biosynthesis, high-mannose type [PATH:...       6458     239.19
+Cationic antimicrobial peptide (CAMP) resistanc...       6269     232.19
+N-glycan precursor biosynthesis [PATH:map00510 ...       6123     226.78
+Multidrug resistance, efflux pump QacA                   5724     212.00
+Fatty acid elongation in mitochondria [PATH:map...       5414     200.52
+Semi-phosphorylative Entner-Doudoroff pathway, ...       5370     198.89
+Anthranilate degradation, anthranilate => catec...       5249     194.41
+N-glycan precursor trimming [PATH:map00510 map0...       5205     192.78
+dTDP-D-desosamine biosynthesis [PATH:map00523 m...       5194     192.37
+Multidrug resistance, efflux pump NorB                   4657     172.48
+Cumate degradation, p-cumate => 2-oxopent-4-eno...       4553     168.63
+Carbazole degradation, carbazole => 2-oxopent-4...       4428     164.00
+Bacilysin biosynthesis, prephenate => bacilysin...       4419     163.67
+F-type ATPase, eukaryotes [PATH:map00190]                4271     158.19
+Sphingosine biosynthesis [PATH:map00600 map01100]        4223     156.41
+D-Galacturonate degradation (fungi), D-galactur...       4153     153.81
+Ubiquinone biosynthesis, eukaryotes, 4-hydroxyb...       4123     152.70
+dTDP-L-mycarose biosynthesis [PATH:map00523 map...       4023     149.00
+Vancomycin resistance, D-Ala-D-Ser type [PATH:m...       3994     147.93
+dTDP-L-oleandrose biosynthesis [PATH:map00523 m...       3893     144.19
+Tocopherol/tocotorienol biosynthesis, homogenti...       3669     135.89
+NADH dehydrogenase (ubiquinone) Fe-S protein/fl...       3600     133.33
+Naphthalene degradation, naphthalene => salicyl...       3550     131.48
+Calicheamicin biosynthesis, calicheamicinone =>...       3476     128.74
+Salicylate degradation, salicylate => gentisate...       3474     128.67
+Helicobacter pylori pathogenicity signature, ca...       3345     123.89
+Nitrification, ammonia => nitrite [PATH:map0091...       3293     121.96
+GPI-anchor biosynthesis, core oligosaccharide [...       3213     119.00
+Multidrug resistance, efflux pump AbcA                   3055     113.15
+Calicheamicin orsellinate moiety biosynthesis, ...       3053     113.07
+Benzoate degradation, benzoate => catechol / me...       3038     112.52
+Benzene degradation, benzene => catechol [PATH:...       2739     101.44
+Maduropeptin beta-hydroxy acid moiety biosynthe...       2529      93.67
+Ceramide biosynthesis [PATH:map00600 map01100]           2513      93.07
+Nocardicin A biosynthesis, L-pHPG + arginine + ...       2494      92.37
+C19/C18-Steroid hormone biosynthesis, pregnenol...       2470      91.48
+Steroid hormone biosynthesis, cholesterol => pr...       2464      91.26
+Methane oxidation, methanotroph, methane => for...       2347      86.93
+dTDP-L-olivose biosynthesis [PATH:map00523 map0...       2342      86.74
+Nicotine degradation, pyrrolidine pathway, nico...       2336      86.52
+Multidrug resistance, efflux pump AdeABC [PATH:...       2319      85.89
+dTDP-L-megosamine biosynthesis [PATH:map00523 m...       2207      81.74
+Clavaminate biosynthesis, arginine + glyceralde...       2072      76.74
+Flavanone biosynthesis, phenylalanine => naring...       2022      74.89
+Cytochrome aa3-600 menaquinol oxidase [PATH:map...       1847      68.41
+Nogalavinone/aklavinone biosynthesis, deoxynoga...       1761      65.22
+Dihydrokalafungin biosynthesis, octaketide => d...       1467      54.33
+C-1027 beta-amino acid moiety biosynthesis, tyr...       1302      48.22
+Inositol phosphate metabolism, PI=> PIP2 => Ins...       1263      46.78
+3,6-Dimethylsalicylyl-CoA biosynthesis, malonyl...       1155      42.78
+Photosystem I [PATH:map00195]                            1113      41.22
+dTDP-D-angolosamine biosynthesis [PATH:map00523...       1107      41.00
+Kedarcidin 2-aza-3-chloro-beta-tyrosine moiety ...       1087      40.26
+Biphenyl degradation, biphenyl => 2-oxopent-4-e...       1087      40.26
+Creatine pathway [PATH:map00330 map01100]                1083      40.11
+Violacein biosynthesis, tryptophan => violacein...        973      36.04
+NADH dehydrogenase (ubiquinone) 1 alpha subcomp...        943      34.93
+Tetracenomycin C/8-demethyltetracenomycin C bio...        811      30.04
+Terephthalate degradation, terephthalate => 3,4...        792      29.33
+Elloramycin biosynthesis, 8-demethyltetracenomy...        785      29.07
+Tetracycline resistance, efflux pump Tet38                783      29.00
+Glycosaminoglycan biosynthesis, linkage tetrasa...        699      25.89
+Pentalenolactone biosynthesis, farnesyl-PP => p...        697      25.81
+N-glycan biosynthesis, complex type [PATH:map00...        695      25.74
+Photosystem II [PATH:map00195]                            672      24.89
+Tylosin biosynthesis, methylmalonyl-CoA + malon...        638      23.63
+V-type ATPase, eukaryotes [PATH:map00190]                 607      22.48
+Erythromycin biosynthesis, propanoyl-CoA + meth...        574      21.26
+Phosphatidylcholine (PC) biosynthesis, choline ...        559      20.70
+Anoxygenic photosystem II                                 491      18.19
+Avermectin biosynthesis, 2-methylbutanoyl-CoA/i...        461      17.07
+Cymene degradation, p-cymene => p-cumate [PATH:...        455      16.85
+dTDP-beta-L-noviose biosynthesis [PATH:map00523...        449      16.63
+dTDP-6-deoxy-D-allose biosynthesis [PATH:map005...        307      11.37
+Benzene/toluene degradation, benzene => catecho...        279      10.33
+Methicillin resistance [PATH:map01501]                    268       9.93
+Succinate dehydrogenase (ubiquinone) [PATH:map0...        258       9.56
+dTDP-D-mycaminose biosynthesis [PATH:map00523 m...        221       8.19
+Multidrug resistance, repression of porin OmpF            195       7.22
+Phosphatidylethanolamine (PE) biosynthesis, eth...        191       7.07
+Phthalate degradation, phthalate => protocatech...        191       7.07
+Glycosaminoglycan biosynthesis, heparan sulfate...        185       6.85
+Carbapenem-3-carboxylate biosynthesis, pyrrolin...        181       6.70
+O-glycan biosynthesis, mucin type core [PATH:ma...        158       5.85
+Fatty acid elongation in endoplasmic reticulum ...        155       5.74
+Kedarcidin 2-hydroxynaphthoate moiety biosynthe...        143       5.30
+Multidrug resistance, efflux pump MexCD-OprJ              138       5.11
+Abscisic acid biosynthesis, beta-carotene => ab...        125       4.63
+Fumitremorgin alkaloid biosynthesis, tryptophan...         84       3.11
+Multidrug resistance, efflux pump MepA                     73       2.70
+Penicillin biosynthesis, aminoadipate + cyctein...         64       2.37
+Cationic antimicrobial peptide (CAMP) resistanc...         38       1.41
+Glycosphingolipid biosynthesis, neolacto-series...         29       1.07
+Inositol phosphate metabolism, Ins(1,3,4)P3 => ...         27       1.00
+C-1027 benzoxazolinate moiety biosynthesis, cho...         21       0.78
+Conjugated bile acid biosynthesis, cholate => t...         17       0.63
+NADH dehydrogenase (ubiquinone) 1 beta subcompl...         11       0.41
+C21-Steroid hormone biosynthesis, progesterone ...          6       0.22
+Tetracycline/oxytetracycline biosynthesis, pret...          2       0.07
+Castasterone biosynthesis, campesterol => casta...          1       0.04
+
+# the sum counts per ID
+             sum      mean
+ID24_1  56867954 167752.08
+ID30_1  24848257  73298.69
+ID28_1  21883266  64552.41
+ID18_1  20534542  60573.87
+ID23_1  15017963  44300.78
+ID14_1  14975554  44175.68
+ID29_1  12166204  35888.51
+ID33_1  11517134  33973.85
+ID20_1  10877508  32087.04
+ID25_1  10642633  31394.20
+ID32_1   8349184  24628.86
+ID21_1   7875480  23231.50
+ID34_1   7073989  20867.22
+ID26_1   6517963  19227.03
+ID22_1   6451230  19030.18
+ID27_1   6189846  18259.13
+ID37_1   6023523  17768.50
+ID12_1   5893530  17385.04
+ID11_1   4646383  13706.14
+ID36_1   4503098  13283.47
+ID38_1   4494663  13258.59
+ID15_1   4376007  12908.58
+ID35_1   3869736  11415.15
+ID31_1   2579227   7608.34
+ID17_1   2392711   7058.14
+ID19_1   1907808   5627.75
+ID13_1   1820497   5370.20
