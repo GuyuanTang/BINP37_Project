@@ -20,9 +20,9 @@ conda activate nbis-meta
 - `qc` to run the pre-processing and to generate the quality report on the samples.
 - `assemble` to run the metagenomic assembly (megahit) on the preprocessed samples. `metaquast` to compare the assembly results.
 - `annotate` to annotate open reading frames called on assembled contigs using settings defined in the config file. It also quantifies genes and features, producing normalized and raw counts. (When specified `True` in taxonomy, this step would include the taxonomy analysis.)
-- `taxonomy` to assign taxonomy to assembled contigs and ORFs called on these contigs.
 - run statistical analysis on the outputs from `annotate` (including quantification reports) to investigate the differences on pathway enrichment between dry and wet samples from top and bottom layers separately, in order to discover the differences in functional compositions. The program languages included Python and R.
-- run statistical analysis on the outputs form `taxonomy` to discover the differences in community compositions between dry and wet samples from top and bottom layers separately.
+- `taxonomy` to assign taxonomy to assembled contigs and ORFs called on these contigs. And count the unique phyla recognized by the program to generate a Krona report based on the assembly of all the samples.
+
 
 
 ### 1. QC 
@@ -78,27 +78,16 @@ snakemake --rerun-incomplete --use-conda --configfile ./config/config.yaml --cor
 If we specified `True` in taxonomy analysis under the command `annotate`, the command would also run the taxonomy step automatically. 
 
 
-### 4. Taxonomy
-However, to ensure the snakemake workflow could run successfully, we chose to download the UniRef100 database manually under the target directory.
-```shell
-cd nbis-meta
-wget https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref100/uniref100.fasta.gz /resources/uniref100/
-```
-Before running the `taxonomy`, in order to improve the efficiency and speed of the programme, we altered the number of "threads" in the snakemake file `taxonomy.smk`, which were set to **200**. Then we ran the `taxonomy` command as the following:
-```shell
-snakemake --use-conda configfile ./config/config.yaml --cores 200 taxonomy
-```
 
-
-### 5. Statistical Analysis on Annotation Outputs
+### 4. Statistical Analysis on Annotation Outputs
 To analyze the differences in functional compositions between dry and wet samples from top and bottom layers separately (here the information on KO was chosen), we wrote programs to:  
-- `annotation_stats.py` to generate basic statistics of the annotation outputs, including the mean counts per row, number of rows, percentage of sparse in the data, and the sum of per row as well as per ID;
-- `stat_KO_DW.R` used DESeq2 to analyse the raw counts of KO annotations of different metagenome samples, including calculating the normalized counts and creating the PCA and the NMDS plots;
-- `KO_Parser.py` to select and calculate the mean of significant KO counts of selected group. With the list of significantly abundant KO and their means, the program would assign colours to each level of counts for later KO mapper (https://www.genome.jp/kegg/mapper/color.html);
-- `KEGG_enrichment.R` to conduct the pathway enrichment analysis on the significantly different KO list;
-- `KO_boxplot_top.py` and `KO_boxplot_bottom.py` to select interested EC number and generate a box plot to show the differences of the distribution of the mean normalized counts between dry and wet samples.  
+- a) `annotation_stats.py` to generate basic statistics of the annotation outputs, including the mean counts per row, number of rows, percentage of sparse in the data, and the sum of per row as well as per ID;
+- b) `stat_KO_DW.R` used DESeq2 to analyse the raw counts of KO annotations of different metagenome samples, including calculating the normalized counts and creating the PCA and the NMDS plots;
+- c) `KO_Parser.py` to select and calculate the mean of significant KO counts of selected group. With the list of significantly abundant KO and their means, the program would assign colours to each level of counts for later KO mapper (https://www.genome.jp/kegg/mapper/color.html);
+- d) `KEGG_enrichment.R` to conduct the pathway enrichment analysis on the significantly different KO list;
+- e) `KO_boxplot_top.py` and `KO_boxplot_bottom.py` to select interested EC number and generate a box plot to show the differences of the distribution of the mean normalized counts between dry and wet samples. (Note: due to time limit, we wrote a script to trace back the contigs appeared in each ID but was not able to finish this part.)  
 
-#### Information on `annotation_stats.py`
+#### a) Information on `annotation_stats.py`
 We used the following command to run the program:
 ```shell
 python annotation_stats.py kos.parsed.TMM.tsv
@@ -159,8 +148,8 @@ with open(out_file, 'w') as out_file:
     print(col_df, file = out_file)
 ```
 
-#### Information on `stat_KO_DW.R`
-The script was used in the directory that would be used to store the results (including the normalized counts table, PCA plot, and NMDS plot) from DESeq2 (v1.40.1).
+#### b) Information on `stat_KO_DW.R`
+The script was used in the directory that would be used to store the results (including the normalized counts table, PCA plot, and NMDS plot) from `DESeq2` (v1.40.1).
 ```R
 ## Load the packages
 library(DESeq2)
@@ -259,7 +248,7 @@ resSig = subset(res_table, padj<0.05)
 write.table(resSig, file = 'diffAbundanceSig.tab', sep = '\t', quote = FALSE, row.names = FALSE)
 ```
 
-#### Information on `KO_Parser.py`
+#### c) Information on `KO_Parser.py`
 The program was used in the directory that stored the normalized counts table.  
 For example, if we would like to see which KOs were significantly more abundant in wet samples from top (WT), we ran the following command:  
 `python KO_Parser.py WT diffAbundanceSig_top.tab ko.normalised.counts.tab`  
@@ -350,8 +339,8 @@ with open(sig_KO,'r') as sig_KO, open(out_mean, 'w') as out_mean, open(out_color
 ```
 
 
-#### Information on `KEGG_enrichment.R`
-The scipt was ran in the directory that stored the outputs from `KO_Parser.py` (the KOs and their mean normalized counts, e.g. WT_KO_m.txt). The package clusterProfiler (v4.8.1) was used in this part.  
+#### d) Information on `KEGG_enrichment.R`
+The scipt was ran in the directory that stored the outputs from `KO_Parser.py` (the KOs and their mean normalized counts, e.g. WT_KO_m.txt). The package `clusterProfiler` (v4.8.1) was used in this part.  
 The outputs from this script would be an enrichment dotplot, an enrichment barplot, an enrich plot and an emapplot. We decided to use the dotplot and the barplot showing the significant enriched pathways.
 ```R
 ## Install the package clusterProfiler
@@ -387,7 +376,7 @@ enrichplot::emapplot(KEGG2,showCategory = 50, color = "p.adjust", layout = "kk")
 dev.off()
 ```
 
-#### Information on `KO_boxplot_top.py` and `KO_boxplot_bottom.py`
+#### e) Information on `KO_boxplot_top.py` and `KO_boxplot_bottom.py`
 These two scripts were mostly the same instead of changing the sample IDs. Therefore, the script here we used the top as the example, the output of which would be the boxplot on the selected EC number.  
 The program should be used as: `python KO_boxplot_top.py 1.14.13.25`
 ```python
@@ -443,4 +432,52 @@ with open(sig_KO_tab, 'r') as sig_KO_tab, open(KO_counts_tab, 'r') as KO_counts_
     # draw the boxplot
     boxplot_KO(KO_dict)
 ```
+
+### 5. Taxonomy
+However, to ensure the snakemake workflow could run successfully, we chose to download the UniRef100 database manually under the target directory.
+```shell
+cd nbis-meta
+wget https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref100/uniref100.fasta.gz /resources/uniref100/
+```
+Before running the `taxonomy`, in order to improve efficiency and speed of the programme, we altered the number of "threads" in the snakemake file `taxonomy.smk`, which were set to **200**. Then we ran the `taxonomy` command as the following:
+```shell
+snakemake --use-conda configfile ./config/config.yaml --cores 200 taxonomy
+```
+####  Visualization of taxonomy output
+- Use the output file `final_contigs.taxonomy.tsv` to generate the counts of each unique phylum. Reformat the counts and store them in the file `taxonomy_phylum.txt`.
+```shell
+cd nbis-meta/4_Taxonomy
+cat final_contigs.taxonomy.tsv | grep -v superkingdom | cut -f 2,3 | grep -v Unclassified | sort | uniq -dc | sed "s/^ *//g" | sed "s/ /\t/" > taxonomy_phylum.txt
+```
+
+- Prepare the conda environment for `Krona` (v2.8.1).
+```shell
+conda create -n krona
+conda activate krona
+conda install -c bioconda krona
+```
+
+- Use Krona to visualize the taxonomy output and save it as the html `SF.html`.
+```shell
+ktImportText taxonomy_phylum.txt -o SF.html
+```
+
+#### Script for tracing back the final contigs to each ID
+Due to time limit, we only prepared the script for this step, but we were not able to get the results.
+```shell
+
+# the input files "final_contigs.features.gff" and "*_1_pe.fc.tsv" (for each ID) were stored in the folder "assembly/SF/mapping" which was created automatically by the nbis-meta workflow.
+
+cd nbis-meta/test_results/assembly/SF/mapping
+
+# unique query chr list (k141_xxxx)
+cat final_contigs.features.gff | cut -f 1 | uniq > final_chr.uniq.list
+
+# sum of each query chr (k141_xxxx) for each ID
+## create output files
+ls *_1_pe.fc.tsv | while read line; do id=$(echo $line | sed "s/_1_pe.fc.tsv//"); touch ${id}_chr_list.tsv; done
+## write the counts to corresponding output files
+ls *_1_pe.fc.tsv | while read line; do id=$(echo $line | sed "s/_1_pe.fc.tsv//"); cat $line | cat final_chr.uniq.list | while read chr; do awk -v chr=${chr} '$2==chr {i=i+$7} END  {print chr,"\t",i}' $line >> ./ID_tax_list/${id}_chr_list.tsv; done; done
+```
+
 
