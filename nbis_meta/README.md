@@ -285,9 +285,9 @@ def color_KO(KO_mean):
     # assign colors to different count category
     for KO, val in KO_mean.items():
         if 0 <= val < 100:
-            color = '#0076FF'
-        elif 100 <= val < 500:
             color = '#9AC9FF'
+        elif 100 <= val < 500:
+            color = '#0076FF'
         elif 500 <= val < 1000:
             color = '#FAC2E3'
         elif 1000 <= val < 2000:
