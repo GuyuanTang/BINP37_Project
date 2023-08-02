@@ -1,8 +1,8 @@
 # <center>README for Metagenomic Study on Microbial Communities in Peatlands Using NBIS-meta</center>
-<center>Author: Guyuan Tang</center>
-<center>BINP37 Research project, Master's program in bioinformatics at Lund University</center>
-<center>Project supervisor: Dag Ahrén</center>
-<center>Github link: https://github.com/GuyuanTang/BINP37_Project/tree/main/nbis_meta</center>
+<center>Author: Guyuan Tang</center>  
+<center>BINP37 Research project, Master's program in bioinformatics at Lund University</center>  
+<center>Project supervisor: Dag Ahrén</center>  
+<center>Github link: https://github.com/GuyuanTang/BINP37_Project/tree/main/nbis_meta</center>  
   
   
 
