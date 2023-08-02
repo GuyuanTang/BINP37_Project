@@ -1,10 +1,27 @@
-# README for Testing NBIS-meta Workflow
-Author: Guyuan Tang  
-Date: 13 Apr 2023
+# <center>README for Metagenomic Study on Microbial Communities in Peatlands Using NBIS-meta</center>
+<center>Author: Guyuan Tang</center>
+<center>BINP37 Research project, Master's program in bioinformatics at Lund University</center>
+<center>Project supervisor: Dag Ahrén</center>
+<center>Github link: https://github.com/GuyuanTang/BINP37_Project/tree/main/nbis_meta</center>
+  
+  
 
 ## Description
-Before running nbis-meta on the required samples under the project, we tested the workflow to manage the settings and the environment.  
-Samples and the config.yaml for this Snakemake were provided in the folder `SampleList`. The `config.yaml` and `config_metaspades.yaml` were used throughout the testing process with only difference in the choice of assemblers.
+Peatlands acting as the global carbon sink was crucial to the carbon cycles and was highly related to climate changes causing by the greenhouse gases (GHG). The microbial community in peatlands is one of the major divers contributing to GHG production and emission, but how the functional profiles would vary among peatlands with different levels of degradation remains unclear.  
+16 soil samples (including 8 pairs of oxygenic and anoxic samples, 3 pairs from the well-drained peat plateaus and 5 from the thermokarsts) were collected for metagenomic analysis in Storflaket (68°20’N, 18°58’E), a permafrost mire in Abisko. We used the nbis-meta workflow designed for the metagenomic study to run the preprocessing, assembly, annotation and taxonomic identification on all the genomic samples pooled as a unit.  
+Samples and the configuration file for this Snakemake were provided in the folder `SampleList`. The `config.yaml` was used throughout the process, the details of which were described in each step.
+  
+  
+## Workflow, Tools and Packages
+- NBIS-meta
+- Quast (v5.2.0)
+- DESeq2 (v1.40.1) *R package*
+- vegan (v2.6.4) *R package*
+- clusterProfiler (v4.8.1) *R package*
+- Krona (v2.8.1)
+  
+  
+
 
 ## Installation of NBIS-meta
 The detailed installation guideline could be found in the github of NBIS-meta: https://github.com/NBISweden/nbis-meta.
@@ -14,7 +31,8 @@ git clone https://github.com/NBISweden/nbis-meta.git
 conda env create -f environment.yml
 conda activate nbis-meta
 ```
-
+  
+  
 
 ## Steps
 - `qc` to run the pre-processing and to generate the quality report on the samples.
@@ -49,6 +67,7 @@ snakemake --use-conda --configfile ./config/config.yaml --cores 60 assemble
 Megahit used the `Abisko_SF1.tsv` as the assemble sample setting.
 
 ##### Using metaquast to check the quality of assembly made by megahit
+Metaquast was a sub-function within the tool Quast (v5.2.0).  
 The comparison was made between the assembly on each ID and the assembly on all of the IDs, without reference. The final report `report.html` was saved to `2_Assembly_megahit/metaquast`.
 ``` shell
 conda activate quast
@@ -58,7 +77,7 @@ metaquast ./ID11/final_contigs.fa ./ID12/final_contigs.fa ./ID13/final_contigs.f
 
 
 ### 3. Annotation
-While running the annotation on all of the samples but not on each ID, the samples were specified in the `Abisko_SF2.tsv` instead.  
+While running the annotation on all of the samples but not on each ID, the samples were specified in the `Abisko_SF2.tsv` instead. Here we modified the sample list in the config.yaml from Abisko_SF1.tsv to Abisko_SF2.tsv.  
 The annotation step included the `quantification` step automatically.  
 To run the annotation step, the following commands were used:
 ```shell
@@ -149,7 +168,7 @@ with open(out_file, 'w') as out_file:
 ```
 
 #### b) Information on `stat_KO_DW.R`
-The script was used in the directory that would be used to store the results (including the normalized counts table, PCA plot, and NMDS plot) from `DESeq2` (v1.40.1).
+The script was used in the directory that would be used to store the results (including the normalized counts table, PCA plot, and NMDS plot) from `DESeq2` (v1.40.1) and `vegan` (v2.6.4).
 ```R
 ## Load the packages
 library(DESeq2)
@@ -354,13 +373,13 @@ library(enrichplot)
 KO_info <- read.csv('WT_KO_m.txt', header = FALSE, row.names = NULL, sep = "\t", col.names = c("KO","mean"))
 
 ## Enrichment analysis
-res <- enrichKEGG(KO_info$KO, organism = "ko", pvalueCutoff = 0.05, pAdjustMethod = "BH", qvalueCutoff = 0.05)
+res <- enrichKEGG(KO_info$KO, organism = "ko", pvalueCutoff = 0.05, pAdjustMethod = "fdr", qvalueCutoff = 0.05)
 # print the dot plot
-pdf("WT_dotplot_bh.pdf")
+pdf("WT_dotplot.pdf")
 dotplot(res)
 dev.off()
 # print the bar plot
-pdf("WT_barplot_bh.pdf")
+pdf("WT_barplot.pdf")
 barplot(res,showCategory = 20,title = 'KEGG Pathway')
 dev.off()
 # print the enrich plot
